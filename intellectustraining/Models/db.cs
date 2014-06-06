@@ -19,40 +19,42 @@ namespace intellectustraining.Models
     public class Candidate
     {
         #region campos do candidato
+        [Key]
+        public int ID { get; set; }
         [Required]
         [Display(Name = "Nome")]
-        string Name { get; set; }
+        public string Name { get; set; }
         [Required]
         [Display(Name = "Sexo")]
-        string Gender { get; set; }
+        public string Gender { get; set; }
         [Display(Name = "Cnh")]
-        string CnhClass { get; set; }
+        public string CnhClass { get; set; }
         [Required]
         [Display(Name = "Data de nascimento")]
-        string BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Display(Name = "Dependentes")]
-        string Dependentes { get; set; }
+        public string Dependentes { get; set; }
         [Required]
         [Display(Name = "Estado Civil")]
-        string Maritalstatu { get; set; }
+        public string Maritalstatu { get; set; }
         [Display(Name = "Celular")]
-        string CellPhone { get; set; }
+        public string CellPhone { get; set; }
         [Required]
         [Display(Name = "Telefone")]
-        string Phone { get; set; }
+        public string Phone { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
         [Display(Name = "E-mail")]
-        string Email { get; set; }
+        public string Email { get; set; }
         [Required]
         [Display(Name = "Endereço")]
-        string Adress { get; set; }
+        public string Adress { get; set; }
         [Required]
         [Display(Name = "Cidade")]
-        string City { get; set; }
+        public string City { get; set; }
         [Required]
         [Display(Name = "Estado")]
-        string State { get; set; }
+        public string State { get; set; }
         #endregion
     }
     #endregion

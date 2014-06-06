@@ -1,7 +1,35 @@
-﻿
+﻿@Model intellectustraining.Models.Candidate
 @{
     ViewBag.Title = "Novo";
 }
+<div class="row">
+    <div class="col-lg-1"></div>
+    <div class="box-generic col-lg-10">
 
-<h2>Novo</h2>
+        <div class="tabsbar tabsbar-2">
+            <ul class="row row-merge">
+                <li class="col-md-3 glyphicons parents active"><a href="#tab1-4" data-toggle="tab"><i></i> Pessoal</a></li>
+                <li class="col-md-3 glyphicons book_open "><a href="#tab2-4" data-toggle="tab"><i></i> <span> Curso</span></a></li>
+                <li class="col-md-3 glyphicons luggage"><a href="#tab3-4" data-toggle="tab"><i></i> <span> Experiencia</span></a></li>
+                <li class="col-md-3 glyphicons globe"><a href="#tab4-4" data-toggle="tab"><i></i> <span> Idiomas</span></a></li>
+            </ul>
+        </div>
+@using (Html.BeginForm("Salvar", "Candidatos"))
+{
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1-4">
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Nome</label>
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(c => c , new { @class = "form-control placeholder-red", @placeholder = "Nome" })
+
+                 
+                    </div>
+                </div>
+            </div>
+              
+            </div>
+}
+    </div>
+</div>
 
